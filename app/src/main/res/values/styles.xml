@@ -6,7 +6,7 @@
     </style>
 
     <style name="buttonStyle" parent="AppTheme">
-        <item name="android:background">#F08C35</item>
+        <item name="android:background">@color/ButtonBackground</item>
         <item name="android:layout_width">200sp</item>
         <item name="android:layout_height">50sp</item>
         <item name="android:layout_marginBottom">10sp</item>
@@ -15,8 +15,8 @@
     </style>
 
     <style name="customBtnStyle" parent="buttonStyle">
-        <item name="android:textColor">#FFFFFF</item>
-        <item name="android:background">#C11B17</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:background">@color/OrangeRed</item>
     </style>
 
 </resources>

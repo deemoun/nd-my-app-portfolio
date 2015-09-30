@@ -10,7 +10,7 @@
     android:layout_height="fill_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#ffdfeaf1">
+    android:background="@color/AppBackground">
 
     <TextView
         android:text="@string/app_description"
