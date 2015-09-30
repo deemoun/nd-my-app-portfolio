@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,36 +39,18 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void displayToast(String message) {
+    public void displayToast(View v) {
+        Button button = (Button) v;
+
+        String buttonText = (String) button.getText();
+
         Context context = getApplicationContext();
-        CharSequence text = "This button will launch my ";
+        CharSequence text = getString(R.string.open_app) + " " + buttonText + " !";
         int duration = Toast.LENGTH_SHORT;
 
-        Toast toast = Toast.makeText(context, text + message + " app!", duration);
+        Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
 
-    public void buttonClicked(View v) {
 
-        switch (v.getId()) {
-            case R.id.btn1:
-                displayToast("spotify streamer");
-                break;
-            case R.id.btn2:
-                displayToast("football scores");
-                break;
-            case R.id.btn3:
-                displayToast("library");
-                break;
-            case R.id.btn4:
-                displayToast("build it bigger");
-                break;
-            case R.id.btn5:
-                displayToast("XYZ reader");
-                break;
-            case R.id.btn6:
-                displayToast("capstone");
-                break;
-        }
-    }
 }
