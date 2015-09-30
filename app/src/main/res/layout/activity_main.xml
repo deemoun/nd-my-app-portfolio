@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#ffdfeaf1">
+
+    <TextView
+        android:text="@string/app_description"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="40sp" />
+
+    <Button
+        android:id="@+id/btn1"
+        style = "@style/buttonStyle"
+        android:text="@string/spot_str"
+        />
+
+    <Button
+        android:id="@+id/btn2"
+        style = "@style/buttonStyle"
+        android:text="@string/scores_app"
+        />
+
+    <Button
+        android:id="@+id/btn3"
+        style = "@style/buttonStyle"
+        android:text="@string/library_app"
+        />
+
+    <Button
+        android:id="@+id/btn4"
+        style = "@style/buttonStyle"
+        android:text="@string/buildit_bigger"
+        />
+
+    <Button
+        android:id="@+id/btn5"
+        style = "@style/buttonStyle"
+        android:text="@string/xyz_read"
+        />
+
+    <Button
+        android:id="@+id/btn6"
+        style = "@style/customBtnStyle"
+        android:text="@string/capstone"
+        />
+
+</LinearLayout>
+</RelativeLayout>
