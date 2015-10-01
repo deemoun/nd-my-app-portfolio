@@ -1,6 +1,7 @@
 package deemounus.org.myappportfolio;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -34,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             Toast.makeText(getApplicationContext(), "The settings button is pressed!", Toast.LENGTH_SHORT).show();
+        } else if (id == R.id.about_app) {
+            Intent i = new Intent(this, AboutApp.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);
