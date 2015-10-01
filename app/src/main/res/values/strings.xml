@@ -9,4 +9,5 @@
     <string name="xyz_read">XYZ READER</string>
     <string name="capstone">CAPSTONE: MY OWN APP</string>
     <string name="action_settings">Settings</string>
+    <string name="about_app">About app</string>
 </resources>
