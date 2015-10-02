@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            Toast.makeText(getApplicationContext(), "The settings button is pressed!", Toast.LENGTH_SHORT).show();
+            ToastDisplay t = new ToastDisplay();
+            t.showToast(getApplicationContext(), "The settings button was pressed!");
         } else if (id == R.id.about_app) {
             Intent i = new Intent(this, AboutApp.class);
             startActivity(i);
@@ -43,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void displayToast(View v) {
+    public void showToast(View v) {
         Button button = (Button) v;
 
         String buttonText = (String) button.getText();
@@ -55,6 +58,5 @@ public class MainActivity extends AppCompatActivity {
         Toast toast = Toast.makeText(context, text, duration);
         toast.show();
     }
-
 
 }
